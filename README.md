@@ -81,11 +81,25 @@ Pastikan Anda telah menginstal alat-alat berikut di mesin Anda:
    ```bash
    docker-compose up -d --build
    ```
-   Pastikan Docker berjalan dengan baik, dan proyek dapat diakses di browser pada http://localhost:8000 dan phpmyadmin di http://localhost:8081.
-   Untuk login phpmyadmin dapat mengisikan:
-   Server : db
-   Username : root
-   Passwordn : (Dikosongkan)
+   
+ ## Akses Aplikasi
+
+Setelah Anda berhasil menjalankan proyek menggunakan Docker, Anda dapat mengakses API dan phpMyAdmin melalui browser dengan informasi berikut:
+
+### Akses API
+
+- **URL API**: [http://localhost:8000](http://localhost:8000/)
+
+### phpMyAdmin
+
+- **URL phpMyAdmin**: [http://localhost:8081](http://localhost:8081)
+
+Untuk mengakses phpMyAdmin, gunakan kredensial berikut:
+
+- **Server**: `db`
+- **Username**: `root`
+- **Password**: (Kosongkan)
+
 ## 📜 Dokumentasi API
 
 - **Link Postman** : `https://api.postman.com/collections/27175259-d84a65bd-1787-45cc-8cf7-b4b468025701?access_key=PMAT-01J6SN4163SS81Y8XPT0T2WV2T`

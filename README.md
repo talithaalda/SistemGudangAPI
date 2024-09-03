@@ -36,46 +36,46 @@ Pastikan Anda telah menginstal alat-alat berikut di mesin Anda:
    ```bash
    composer install
    ```
-2. **Salin File Environment**
+3. **Salin File Environment**
 
-  Buat salinan dari file .env.example dan ubah namanya menjadi .env:
+   Buat salinan dari file .env.example dan ubah namanya menjadi .env:
 
    ```bash
    cp .env.example .env
    ```
-Lakukan konfigurasi variabel environment yang diperlukan, seperti DB_DATABASE, DB_USERNAME, dan DB_PASSWORD.
-3. **Generate Application Key**
+   Lakukan konfigurasi variabel environment yang diperlukan, seperti DB_DATABASE, DB_USERNAME, dan DB_PASSWORD.
+4. **Generate Application Key**
 
-  Jalankan perintah berikut untuk menghasilkan application key:
+   Jalankan perintah berikut untuk menghasilkan application key:
 
    ```bash
    php artisan key:generate
    ```
 
-2. **Setup Database**
+5. **Setup Database**
 
-  Jalankan migrasi database untuk membuat tabel yang diperlukan:
+   Jalankan migrasi database untuk membuat tabel yang diperlukan:
 
    ```bash
    php artisan migrate
    ```
-2. **Seed Database**
+6. **Seed Database**
 
   Jalankan perintah berikut untuk mengisi database dengan data awal:
 
    ```bash
    php artisan db:seed
    ```
-2. **Jalankan Proyek Menggunakan Docker**
+7. **Jalankan Proyek Menggunakan Docker**
 
-  Bangun dan jalankan kontainer Docker menggunakan Docker Compose:
+   Bangun dan jalankan kontainer Docker menggunakan Docker Compose:
 
    ```bash
    docker-compose up -d --build
    ```
-Pastikan Docker berjalan dengan baik, dan proyek dapat diakses di browser pada http://localhost:8000 dan phpmyadmin di http://localhost:8081 
+   Pastikan Docker berjalan dengan baik, dan proyek dapat diakses di browser pada http://localhost:8000 dan phpmyadmin di http://localhost:8081 
 
 ## 📜 Dokumentasi API
 
 Untuk detail lebih lanjut tentang penggunaan API, silakan merujuk ke dokumentasi API di Postman: 
-[Dokumentasi API di Postman](https://api.postman.com/collections/27175259-d84a65bd-1787-45cc-8cf7-b4b468025701?access_key=PMAT-01J6SN4163SS81Y8XPT0T2WV2T )
+Dokumentasi API : https://api.postman.com/collections/27175259-d84a65bd-1787-45cc-8cf7-b4b468025701?access_key=PMAT-01J6SN4163SS81Y8XPT0T2WV2T

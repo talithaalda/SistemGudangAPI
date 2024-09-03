@@ -27,7 +27,7 @@ Pastikan Anda telah menginstal alat-alat berikut di mesin Anda:
 
    ```bash
    git clone https://github.com/talithaalda/SistemGudangAPI.git
-   cd sistem-gudang
+   cd SistemGudangAPI
    ```
 2. **Install Dependensi**
 

@@ -73,7 +73,7 @@ Lakukan konfigurasi variabel environment yang diperlukan, seperti DB_DATABASE, D
    ```bash
    docker-compose up -d --build
    ```
-Pastikan Docker berjalan dengan baik, dan proyek dapat diakses di browser pada http://localhost:8000.
+Pastikan Docker berjalan dengan baik, dan proyek dapat diakses di browser pada http://localhost:8000 dan phpmyadmin di http://localhost:8081 
 
 ## 📜 Dokumentasi API
 

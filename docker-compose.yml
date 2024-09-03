@@ -45,7 +45,7 @@ services:
         image: "phpmyadmin"
         container_name: pma
         environment:
-            PMA_HOST: db
+            PMA_HOST: "${DB_HOST}"
             PMA_ARBITRARY: 1
         restart: always
         ports:

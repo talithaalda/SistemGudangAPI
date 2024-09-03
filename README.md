@@ -43,7 +43,15 @@ Pastikan Anda telah menginstal alat-alat berikut di mesin Anda:
    ```bash
    cp .env.example .env
    ```
-   Lakukan konfigurasi variabel environment yang diperlukan, seperti DB_DATABASE, DB_USERNAME, dan DB_PASSWORD.
+   Perbarui file .env dengan konfigurasi database berikut:
+   ```bash
+   DB_CONNECTION=mysql
+   DB_HOST=db
+   DB_PORT=3306
+   DB_DATABASE=sistemgudang
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
 4. **Generate Application Key**
 
    Jalankan perintah berikut untuk menghasilkan application key:
@@ -73,8 +81,11 @@ Pastikan Anda telah menginstal alat-alat berikut di mesin Anda:
    ```bash
    docker-compose up -d --build
    ```
-   Pastikan Docker berjalan dengan baik, dan proyek dapat diakses di browser pada http://localhost:8000 dan phpmyadmin di http://localhost:8081 
-
+   Pastikan Docker berjalan dengan baik, dan proyek dapat diakses di browser pada http://localhost:8000 dan phpmyadmin di http://localhost:8081.
+   Untuk login phpmyadmin dapat mengisikan:
+   Server : db
+   Username : root
+   Passwordn : (Dikosongkan)
 ## 📜 Dokumentasi API
 
 - **Link Postman** : `https://api.postman.com/collections/27175259-d84a65bd-1787-45cc-8cf7-b4b468025701?access_key=PMAT-01J6SN4163SS81Y8XPT0T2WV2T`

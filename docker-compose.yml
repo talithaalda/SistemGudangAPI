@@ -1,0 +1,62 @@
+version: "3.8"
+services:
+    main:
+        container_name: Serve
+        build:
+            context: .
+            dockerfile: Dockerfile
+        command: >
+            sh -c "php artisan migrate:fresh --seed && php artisan serve --host=0.0.0.0"
+        volumes:
+            - .:/app
+        ports:
+            - 8000:8000
+        networks:
+            - laravel-exa
+        depends_on:
+            - db
+
+    queue:
+        container_name: Queue
+        build:
+            context: .
+            dockerfile: Dockerfile
+        command: "php artisan queue:work"
+        depends_on:
+            - db
+        networks:
+            - laravel-exa
+
+    db:
+        image: mysql:8.0
+        container_name: Database
+        environment:
+            MYSQL_DATABASE: "${DB_DATABASE}"
+            MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+            MYSQL_PASSWORD: ""
+        volumes:
+            - db:/var/lib/mysql
+        ports:
+            - 3306:3306
+        networks:
+            - laravel-exa
+
+    phpmyadmin:
+        image: "phpmyadmin"
+        container_name: pma
+        environment:
+            PMA_HOST: db
+            PMA_ARBITRARY: 1
+        restart: always
+        ports:
+            - 8081:80
+        networks:
+            - laravel-exa
+
+networks:
+    laravel-exa:
+        driver: bridge
+
+volumes:
+    db:
+        driver: local

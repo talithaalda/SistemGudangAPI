@@ -78,4 +78,4 @@ Pastikan Docker berjalan dengan baik, dan proyek dapat diakses di browser pada h
 ## 📜 Dokumentasi API
 
 Untuk detail lebih lanjut tentang penggunaan API, silakan merujuk ke dokumentasi API di Postman: 
-[Dokumentasi API di Postman]([https://www.postman.com/collections/link-ke-dokumentasi-postman](https://api.postman.com/collections/27175259-d84a65bd-1787-45cc-8cf7-b4b468025701?access_key=PMAT-01J6SN4163SS81Y8XPT0T2WV2T )
+[Dokumentasi API di Postman](https://api.postman.com/collections/27175259-d84a65bd-1787-45cc-8cf7-b4b468025701?access_key=PMAT-01J6SN4163SS81Y8XPT0T2WV2T )

@@ -77,5 +77,4 @@ Pastikan Anda telah menginstal alat-alat berikut di mesin Anda:
 
 ## 📜 Dokumentasi API
 
-Untuk detail lebih lanjut tentang penggunaan API, silakan merujuk ke dokumentasi API di Postman: 
-Dokumentasi API : https://api.postman.com/collections/27175259-d84a65bd-1787-45cc-8cf7-b4b468025701?access_key=PMAT-01J6SN4163SS81Y8XPT0T2WV2T
+Link Postman : https://api.postman.com/collections/27175259-d84a65bd-1787-45cc-8cf7-b4b468025701?access_key=PMAT-01J6SN4163SS81Y8XPT0T2WV2T
